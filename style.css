@@ -50,17 +50,44 @@ table {
 
 /*   */
 
-h2 {
-    margin-bottom: 2rem;
+body {
+    display: grid;
+    place-items: center;
+    color: #062D3E;
+    background-image: linear-gradient(to top, #d3a0bd, #cca3c7, #c4a7d0, 
+                                              #baabd7, #aeafdd, #a6b8e4, 
+                                              #9fc0ea, #99c8ed, #9ad6f3, 
+                                              #9fe3f6, #a9eff7, #b8fbf7);
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.quizBox {
+    margin: 50px;
+    border-radius: 10px;
+    background: #eaf8ff;
+    box-shadow: 0px 30px 100px rgba(6, 45, 62, 0.5);
 }
 
 .questionBox {
-    margin: 3rem auto;
+    margin: 20px;
 }
 
 .border {
-    border: 2px solid rgb(209, 200, 200);
-    border-radius: 4px;
+    border: 1px solid #062D3E;
+    border-radius: 40px;
 }
 
 .questions {
@@ -71,8 +98,8 @@ h2 {
 .rightBox {
     margin: 2px;
     display: block;
-    width: 350px;
-    border-radius: 4px;
+    width: 400px;
+    border-radius: 40px;
     padding: 10px;
     cursor: pointer;
 }
@@ -82,7 +109,7 @@ h2 {
 }
 
 .right {
-    background-color: green;
+    background-color: #00DD73;
     color: #fff;
     animation: correct 0.2s 1;
 }
@@ -98,8 +125,8 @@ h2 {
 
 .wrong {
     padding: 10px;
-    border-radius: 4px;
-    background-color: red;
+    border-radius: 40px;
+    background-color: #f92D45;
     color: #fff;
     margin: 2px;
     display: block;
@@ -121,7 +148,7 @@ h2 {
     cursor: pointer;
     margin: 2px;
     display: block;
-    width: 350px;
+    width: 400px;
 }
 
 input[type='radio'] {
